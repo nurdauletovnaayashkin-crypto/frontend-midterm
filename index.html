@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Wanderlens Coastal Pass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans-custom min-h-screen flex flex-col justify-between bg-stone-50">
+
+    <header class="w-full px-6 lg:px-16 py-6 flex items-center justify-between z-20 bg-white shadow-sm">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-[#1a4a5a]">
+                <i class="fa-solid fa-water text-2xl"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="font-serif-custom text-xl font-bold tracking-tight text-[#1a4a5a]">Wanderlens</span>
+                <span class="text-[9px] font-bold tracking-[0.25em] text-[#1a4a5a] -mt-1">COASTAL PASS</span>
+            </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#423530]">
+            <a href="index.html" class="text-[#1a4a5a] font-bold">Home</a>
+            <a href="discover.html" class="hover:text-[#1a4a5a] transition-colors">Discover</a>
+            <a href="attractions.html" class="hover:text-[#1a4a5a] transition-colors">Attractions</a>
+            <a href="experiences.html" class="hover:text-[#1a4a5a] transition-colors">Experiences</a>
+            <a href="plan-trip.html" class="hover:text-[#1a4a5a] transition-colors">Plan Your Trip</a>
+            <a href="about.html" class="hover:text-[#1a4a5a] transition-colors">About</a>
+            <a href="contact.html" class="hover:text-[#1a4a5a] transition-colors">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <a href="pass.html" class="bg-[#1a4a5a] hover:bg-[#123440] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition-all">Get Coastal Pass</a>
+            <button class="md:hidden text-xl text-[#2b221e]"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="flex-grow relative overflow-hidden pb-16">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80" alt="Coastal Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-100/90 via-stone-100/70 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 px-6 lg:px-16 py-12 max-w-7xl mx-auto w-full">
+            <div class="mb-4">
+                <span class="text-[#1a4a5a] font-bold tracking-widest text-xs uppercase bg-white/80 backdrop-blur-md px-3.5 py-1.5 rounded-full inline-block shadow-sm">Coastal & Island Escape</span>
+            </div>
+
+            <div class="max-w-2xl mb-12">
+                <h1 class="text-4xl lg:text-6xl font-serif-custom font-bold text-[#2b221e] leading-tight mb-6">
+                    Your Journey to Pristine Coastal Views
+                </h1>
+                <p class="text-[#423530] text-base leading-relaxed mb-8 font-medium">
+                    Discover crystal clear waters, hidden coves, and scenic coastal towns with a single all-inclusive pass.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="discover.html" class="bg-[#1a4a5a] hover:bg-[#123440] text-white px-8 py-3.5 rounded-full font-semibold text-sm shadow-lg transition-all flex items-center gap-2">
+                        Explore Coastal Pass <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <button class="bg-white/90 hover:bg-white text-[#2b221e] px-6 py-3.5 rounded-full font-semibold text-sm shadow-md border border-stone-200 transition-all flex items-center gap-2">
+                        <div class="w-6 h-6 rounded-full bg-[#1a4a5a] text-white flex items-center justify-center text-[10px]">
+                            <i class="fa-solid fa-play"></i>
+                        </div> Watch Video
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mb-12">
+                <div class="bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-md border border-white/50 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-[#e4efef] text-[#1a4a5a] flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-shield-check text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-[#2b221e] mb-1">Verified Access</h4>
+                        <p class="text-xs text-stone-600">Official & secure maritime tours</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-md border border-white/50 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-[#e4efef] text-[#1a4a5a] flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-[#2b221e] mb-1">Skip Queues</h4>
+                        <p class="text-xs text-stone-600">Priority boarding on ferries & beaches</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-md border border-white/50 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-[#e4efef] text-[#1a4a5a] flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-water text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-[#2b221e] mb-1">Best Coastal Value</h4>
+                        <p class="text-xs text-stone-600">Top island spots at best rates</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-md border border-white/50 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-[#e4efef] text-[#1a4a5a] flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-headset text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-[#2b221e] mb-1">24/7 Support</h4>
+                        <p class="text-xs text-stone-600">Assistance throughout your trip</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/95 backdrop-blur-md py-6 px-8 rounded-3xl shadow-xl border border-white/50 grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-4xl">
+                <div>
+                    <div class="text-2xl lg:text-3xl font-serif-custom font-bold text-[#2b221e] mb-1">65+</div>
+                    <div class="text-[11px] text-stone-500 uppercase tracking-wider font-semibold">Coastal Spots</div>
+                </div>
+                <div>
+                    <div class="text-2xl lg:text-3xl font-serif-custom font-bold text-[#2b221e] mb-1">800K+</div>
+                    <div class="text-[11px] text-stone-500 uppercase tracking-wider font-semibold">Travelers</div>
+                </div>
+                <div>
+                    <div class="text-2xl lg:text-3xl font-serif-custom font-bold text-[#2b221e] mb-1">400+</div>
+                    <div class="text-[11px] text-stone-500 uppercase tracking-wider font-semibold">Cruises</div>
+                </div>
+                <div>
+                    <div class="text-2xl lg:text-3xl font-serif-custom font-bold text-[#2b221e] mb-1">4.9</div>
+                    <div class="text-[11px] text-stone-500 uppercase tracking-wider font-semibold">Rating</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500 z-10 relative">
+        &copy; 2026 Wanderlens Coastal Pass. All rights reserved.
+    </footer>
+
+</body>
+</html>

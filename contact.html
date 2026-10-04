@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Client Info - Wanderlens Coastal Pass</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans-custom min-h-screen flex flex-col justify-between bg-stone-50">
+
+    <header class="w-full px-6 lg:px-16 py-6 flex items-center justify-between z-20 bg-white shadow-sm">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-[#1a4a5a]">
+                <i class="fa-solid fa-water text-2xl"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="font-serif-custom text-xl font-bold tracking-tight text-[#1a4a5a]">Wanderlens</span>
+                <span class="text-[9px] font-bold tracking-[0.25em] text-[#1a4a5a] -mt-1">COASTAL PASS</span>
+            </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#423530]">
+            <a href="discover.html" class="hover:text-[#1a4a5a] transition-colors">Discover</a>
+            <a href="attractions.html" class="hover:text-[#1a4a5a] transition-colors">Attractions</a>
+            <a href="experiences.html" class="hover:text-[#1a4a5a] transition-colors">Experiences</a>
+            <a href="plan-trip.html" class="hover:text-[#1a4a5a] transition-colors">Plan Your Trip</a>
+            <a href="about.html" class="hover:text-[#1a4a5a] transition-colors">About</a>
+            <a href="contact.html" class="text-[#1a4a5a] font-bold">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <a href="pass.html" class="bg-[#1a4a5a] hover:bg-[#123440] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition-all">Get Coastal Pass</a>
+        </div>
+    </header>
+
+    <main class="flex-grow px-6 lg:px-16 py-12 max-w-2xl mx-auto w-full">
+        <div class="mb-8 text-center">
+            <span class="text-[#1a4a5a] font-bold tracking-widest text-xs uppercase bg-[#e4efef] px-3.5 py-1.5 rounded-full inline-block">Client Information</span>
+            <h1 class="text-3xl font-serif-custom font-bold text-[#2b221e] mt-3 mb-2">Enter Your Personal Details</h1>
+            <p class="text-sm text-[#6e5d55]">Please fill out the details below to complete your pass and booking process.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-md border border-stone-200">
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Your details have been successfully saved!'); window.location.href='index.html';">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-stone-600">Full Name</label>
+                    <input type="text" required placeholder="e.g. John Smith" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#1a4a5a]">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-stone-600">Email Address</label>
+                    <input type="email" required placeholder="example@mail.com" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#1a4a5a]">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-stone-600">Phone Number</label>
+                    <input type="tel" required placeholder="+1 (800) 000-00-00" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#1a4a5a]">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-stone-600">Message / Inquiry</label>
+                    <textarea rows="3" placeholder="Write any additional questions or requests here..." class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-[#1a4a5a]"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-[#1a4a5a] hover:bg-[#123440] text-white py-3.5 rounded-full font-semibold text-sm transition-all shadow-md mt-2">Confirm and Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+        &copy; 2026 Wanderlens Coastal Pass. All rights reserved.
+    </footer>
+
+</body>
+</html>
